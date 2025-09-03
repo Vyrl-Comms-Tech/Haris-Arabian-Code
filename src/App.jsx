@@ -146,15 +146,12 @@ function App() {
           element={<Mortgages lenis={lenisRef.current} />}
         />
         {/* 28/aug/thus */}
-        <Route
-          path="/podcast-inner"
-          element={<PodcastInner lenis={lenisRef.current} />}
-        />
+       
         {/*2/sep/tues  */}
-        <Route
+        {/* <Route
           path="/people-result"
           element={<PeopleResult lenis={lenisRef.current} />}
-        />
+        /> */}
       
       
       </Routes>
