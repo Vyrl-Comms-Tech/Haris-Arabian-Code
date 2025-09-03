@@ -31,8 +31,8 @@ import AboutUs from "./Pages/AboutUs";
 import PeopleProfile from "./Pages/PeopleProfile";
 import ContactUs from "./Pages/ContactUs";
 import Mortgages from './Pages/Mortgages'
-// import PodcastInner from "./Pages/PodcastInner";
-// import PeopleResult from "./Pages/PeopleResult";
+import ReferTrack from "./Pages/ReferTrack";
+import AddBlogs from "./admin/pages/AddBlogs";
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -95,10 +95,7 @@ function App() {
     <PropertyProvider>
       <Routes>
         <Route path="/" element={<Home lenis={lenisRef.current} />} />
-        {/* <Route
-          path="/Mortgagepage"
-          element={<MortgageCalculator lenis={lenisRef.current} />}
-        /> */}
+  
         <Route path="/KH" element={<KnowledgeHub lenis={lenisRef.current} />} />
         <Route path="/single-property" element={<Singlepage />} />
         <Route
@@ -145,15 +142,14 @@ function App() {
           path="/Mortgagepage"
           element={<Mortgages lenis={lenisRef.current} />}
         />
-        {/* 28/aug/thus */}
-       
-        {/*2/sep/tues  */}
-        {/* <Route
-          path="/people-result"
-          element={<PeopleResult lenis={lenisRef.current} />}
-        /> */}
-      
-      
+        
+        {/*New Page  */}
+        <Route
+          path="/Refer-track"
+          element={<ReferTrack lenis={lenisRef.current} />}
+        />
+
+
       </Routes>
 
       {/* Container wrap for admin/dashboard/etc. */}
@@ -200,6 +196,21 @@ function App() {
                   toggleDarkMode={toggleDarkMode}
                 >
                   <Blogs />
+                </DashboardLayout>
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/Addblogs"
+            element={
+              <ProtectedRoute>
+                <DashboardLayout
+                  isSidebarOpen={isSidebarOpen}
+                  toggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)}
+                  isDarkMode={isDarkMode}
+                  toggleDarkMode={toggleDarkMode}
+                >
+                  <AddBlogs />
                 </DashboardLayout>
               </ProtectedRoute>
             }
