@@ -31,8 +31,8 @@ import AboutUs from "./Pages/AboutUs";
 import PeopleProfile from "./Pages/PeopleProfile";
 import ContactUs from "./Pages/ContactUs";
 import Mortgages from './Pages/Mortgages'
-import ReferTrack from "./Pages/ReferTrack";
-import AddBlogs from "./admin/pages/AddBlogs";
+import PodcastInner from "./Pages/PodcastInner";
+import PeopleResult from "./Pages/PeopleResult";
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -95,7 +95,10 @@ function App() {
     <PropertyProvider>
       <Routes>
         <Route path="/" element={<Home lenis={lenisRef.current} />} />
-  
+        {/* <Route
+          path="/Mortgagepage"
+          element={<MortgageCalculator lenis={lenisRef.current} />}
+        /> */}
         <Route path="/KH" element={<KnowledgeHub lenis={lenisRef.current} />} />
         <Route path="/single-property" element={<Singlepage />} />
         <Route
@@ -142,14 +145,18 @@ function App() {
           path="/Mortgagepage"
           element={<Mortgages lenis={lenisRef.current} />}
         />
-        
-        {/*New Page  */}
+        {/* 28/aug/thus */}
         <Route
-          path="/Refer-track"
-          element={<ReferTrack lenis={lenisRef.current} />}
+          path="/podcast-inner"
+          element={<PodcastInner lenis={lenisRef.current} />}
         />
-
-
+        {/*2/sep/tues  */}
+        <Route
+          path="/people-result"
+          element={<PeopleResult lenis={lenisRef.current} />}
+        />
+      
+      
       </Routes>
 
       {/* Container wrap for admin/dashboard/etc. */}
@@ -196,21 +203,6 @@ function App() {
                   toggleDarkMode={toggleDarkMode}
                 >
                   <Blogs />
-                </DashboardLayout>
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/Addblogs"
-            element={
-              <ProtectedRoute>
-                <DashboardLayout
-                  isSidebarOpen={isSidebarOpen}
-                  toggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)}
-                  isDarkMode={isDarkMode}
-                  toggleDarkMode={toggleDarkMode}
-                >
-                  <AddBlogs />
                 </DashboardLayout>
               </ProtectedRoute>
             }
