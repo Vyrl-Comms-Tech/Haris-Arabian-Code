@@ -31,8 +31,8 @@ import AboutUs from "./Pages/AboutUs";
 import PeopleProfile from "./Pages/PeopleProfile";
 import ContactUs from "./Pages/ContactUs";
 import Mortgages from './Pages/Mortgages'
-import PodcastInner from "./Pages/PodcastInner";
-import PeopleResult from "./Pages/PeopleResult";
+// import PodcastInner from "./Pages/PodcastInner";
+// import PeopleResult from "./Pages/PeopleResult";
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
