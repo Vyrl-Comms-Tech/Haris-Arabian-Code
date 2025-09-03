@@ -1,0 +1,187 @@
+.contact-location {
+  width: 100%;
+  height: min-content;
+  margin-top: 100px;
+  /* padding-inline: 60px; */
+  padding-inline: clamp(30px, 3vw, 60px);
+}
+.contact-location h1 {
+  color: #011825;
+  /* font-size: 53px; */
+  font-size: clamp(45px, 2.7vw, 53px);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.contact-location-map {
+  height: 600px;
+  width: 100%;
+  margin-top: 30px;
+  background-color: #d9d9d9;
+}
+/*todo ================================== */
+/*! contact-location-services !*/
+/*todo ================================== */
+
+.contact-location-services {
+  height: min-content;
+  /* padding-inline: 175px; */
+  padding-inline: clamp(90px, 8vw, 175px);
+  margin-top: 135px;
+}
+.contact-location-services h1 {
+  color: #011825;
+  text-align: center;
+  /* font-size: 72px; */
+  font-size: clamp(60px, 3.6vw, 72px);
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 25px;
+  line-height: normal;
+}
+
+.contact-location-services-top {
+  display: flex;
+  gap: 25px;
+}
+
+.contact-location-services-top-one,
+.contact-location-services-top-two,
+.contact-location-services-bottom {
+  padding: 40px 45px !important;
+  background-color: #011825;
+  color: white;
+}
+.contact-location-services-top-one h2,
+.contact-location-services-top-two h2,
+.contact-location-services-bottom h2 {
+  color: #fff;
+  /* font-size: 43px; */
+  font-size: clamp(40px, 2.2vw, 43px);
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.contact-location-services-top-one p,
+.contact-location-services-top-two p,
+.contact-location-services-bottom p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+.contact-location-services-top-one button,
+.contact-location-services-top-two button,
+.contact-location-services-bottom button {
+  color: #fff;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 400;
+  display: flex;
+  width: 175px;
+  padding: 6px 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 60px;
+  border: 1px solid #fff;
+  backdrop-filter: blur(7.449999809265137px);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.contact-location-services-bottom {
+  margin-top: 20px;
+  text-align: center;
+}
+.contact-location-services-bottom button {
+  display: inline-block;
+}
+
+.contact-location-services-bottom-p {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 6px;
+}
+.contact-location-services-bottom-p p {
+  /* border: 1px solid green; */
+  width: 815px;
+}
+/*todo ============= */
+/*! faq !*/
+/*todo ============= */
+
+.contact-location-faq {
+  width: 100%;
+  height: min-content;
+  padding-inline: 175px;
+  margin-top: 125px;
+  margin-bottom: 100px;
+}
+
+.faq-item {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(1, 24, 37, 0.24);
+}
+
+.faq-question {
+  width: 100%;
+  padding: 18px 8px;
+  border: 0;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  cursor: pointer;
+}
+
+.faq-question h2 {
+  color: #011825;
+  /* font-size: 28px; */
+  font-size: clamp(26px, 1.45vw, 28px);
+  font-weight: 400;
+  margin: 0;
+}
+
+.faq-question:focus {
+  /* outline: 2px solid #5aa7ff; */
+  outline-offset: 2px;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+.faq-item.active .arrow {
+  transform: rotate(180deg);
+}
+
+/* Animated panel */
+.faq-answer {
+  overflow: hidden;
+  max-height: 0; /* collapsed */
+  opacity: 0;
+  padding: 0 8px !important; /* horizontal padding stays */
+  transition: max-height 0.35s ease, opacity 0.25s ease, padding 0.35s ease;
+}
+
+.faq-answer p {
+  color: #011825;
+  /* font-size: 22px; */
+  font-size: clamp(18px,1.125vw,22px);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .faq-answer {
+    transition: none;
+  }
+  .arrow {
+    transition: none;
+  }
+}

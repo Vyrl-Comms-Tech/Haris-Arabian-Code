@@ -1,0 +1,325 @@
+.refferproperty-section {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid black;
+}
+
+#padded-dark-header {
+  background-color: var(--bluebg);
+  padding: 50px;
+  margin: 0px !important;
+}
+
+#padded-dark-header .header-left .main-title {
+  color: #fff !important;
+}
+
+.reffersection-body {
+  width: 100%;
+  height: 75vh;
+  background-color: var(--bluebg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  padding-bottom: 5vh;
+}
+
+.reffersection-left {
+  width: 47%;
+  height: 100%;
+  border-top: 1px solid #cecece63;
+  border-bottom: 1px solid #cecece63;
+  border-right: 1px solid #cecece63;
+  padding: 60px;
+}
+
+.reffersection-right {
+  height: 100%;
+  border-top: 1px solid #cecece63;
+  border-bottom: 1px solid #cecece63;
+  border-left: 1px solid #cecece63;
+  width: 53%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Updated image container for multiple absolute positioned images */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+  border-radius: 12px;
+  
+}
+
+.refer-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  will-change: clip-path;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: none; /* Remove any transitions to prevent jutter */
+}
+
+/* Remove old current/next image classes since we're using dynamic refs */
+.current-image,
+.next-image {
+  /* These classes are no longer used */
+}
+
+/* Remove legacy styles */
+.curtain-overlay {
+  display: none;
+}
+
+#refer-img {
+  display: none;
+}
+
+.reffer-title {
+  color: #fff;
+  font-size: clamp(1.5rem,2.2vw,2.75rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.9375rem;
+  transition: none; /* Remove CSS transitions to let GSAP handle everything */
+  will-change: transform, opacity;
+  transform: translateZ(0); /* Hardware acceleration */
+  backface-visibility: hidden;
+}
+
+.reffer-desc {
+  color: #fff;
+  font-size: 1.5875rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.875rem;
+  width: 90%;
+  transition: none; /* Remove CSS transitions to let GSAP handle everything */
+  will-change: transform, opacity;
+  transform: translateZ(0); /* Hardware acceleration */
+  backface-visibility: hidden;
+}
+
+.refer-button {
+  color: #011825;
+  text-align: center;
+  font-family: "Anek Latin";
+  font-size: 1.3125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  width: min-content;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+
+.refer-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.refferpaginationsection {
+  position: absolute;
+  right: 20px;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 10;
+}
+
+.reffer-bullet {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.reffer-bullet-active {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: scale(1.2);
+  background: transparent;
+}
+
+.reffer-bullet:hover {
+  transform: scale(1.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.small-bullet {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.33);
+  transition: all 0.3s ease;
+}
+
+.small-bullet-active {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .reffersection-body {
+    flex-direction: column;
+    height: auto;
+    min-height: 75vh;
+    padding: 20px;
+  }
+  
+  .reffersection-left,
+  .reffersection-right {
+    width: 100%;
+    border: 1px solid #cecece63;
+    border-radius: 12px;
+  }
+  
+  .reffersection-left {
+    height: 400px;
+    margin-bottom: 20px;
+    padding: 40px;
+  }
+  
+  .reffersection-right {
+    height: auto;
+    padding: 40px;
+    position: relative;
+  }
+  
+  .refferpaginationsection {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #padded-dark-header {
+    padding: 30px 20px;
+  }
+  
+  .reffersection-left {
+    height: 300px;
+    padding: 20px;
+  }
+  
+  .reffersection-right {
+    padding: 30px 20px;
+  }
+  
+  .reffer-title {
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+  
+  .reffer-desc {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    width: 100%;
+  }
+  
+  .refer-button {
+    font-size: 1.1rem;
+    padding: 12px 24px;
+  }
+  
+  .reffer-bullet,
+  .reffer-bullet-active {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .small-bullet,
+  .small-bullet-active {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .refferproperty-section {
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  .reffersection-body {
+    padding: 10px;
+    height: auto;
+  }
+  
+  .reffersection-left {
+    height: 250px;
+    padding: 15px;
+  }
+  
+  .reffersection-right {
+    padding: 20px 15px;
+  }
+  
+  .reffer-title {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  
+  .reffer-desc {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+  
+  .refer-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .refferpaginationsection {
+    gap: 10px;
+    margin-top: 15px;
+  }
+}
+
+/* Performance optimizations */
+.image-container * {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}

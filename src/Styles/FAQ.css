@@ -1,0 +1,106 @@
+/* Default FAQ styling */
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 10px;
+}
+
+/* FAQ Question Button */
+.faq-question {
+  width: 100%;
+  padding: 18px 8px;
+  border: 0;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  cursor: pointer;
+}
+
+.faq-question:focus {
+  outline-offset: 2px;
+}
+
+.faq-item h3 {
+  color: #fff;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+/* Arrow Animation */
+.faq-arrow {
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-arrow {
+  transform: rotate(180deg);
+}
+
+/* Animated Answer Panel */
+.faq-answer {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  padding: 0 8px;
+  transition: max-height 0.35s ease, opacity 0.25s ease, padding 0.35s ease;
+}
+
+.faq-item.active .faq-answer {
+  opacity: 1;
+  padding: 10px 8px;
+}
+
+.faq-answer p {
+  color: #fff;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 1.6;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .faq-answer {
+    transition: none;
+  }
+  .faq-arrow {
+    transition: none;
+  }
+}
+
+/* Mortgage page variant */
+.faq-accordion.mortgage {
+  margin-top: 30px;
+}
+
+.faq-accordion.mortgage .faq-item {
+  border-bottom: 1px solid rgba(1, 24, 37, 0.2);
+}
+
+.faq-accordion.mortgage .faq-item h3 {
+  color: #011825;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.faq-accordion.mortgage .faq-answer p {
+  color: #000;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.faq-accordion.mortgage .faq-arrow path {
+  fill: #011825;
+}

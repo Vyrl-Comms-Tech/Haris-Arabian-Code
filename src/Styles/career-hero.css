@@ -1,0 +1,73 @@
+.career-hero {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background: linear-gradient(
+      0deg,
+      rgba(1, 24, 37, 0.4) 0%,
+      rgba(1, 24, 37, 0.4) 100%
+    ),
+    url("/Assets/career.jpg") lightgray 50% / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.career-hero-container {
+  /* border: 2px solid green; */
+}
+
+.career-hero-container h1 {
+  color: #fff;
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 72px);
+  /* font-size: 72px; */
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+.career-hero-container p {
+  color: #fff;
+  text-align: center;
+  font-size: clamp(18px, 2vw, 27px);
+  /* font-size: 27px; */
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px;
+  max-width: 1025px;
+  margin-bottom: 40px;
+  padding: 0px 10px;
+}
+
+.career-hero-container button {
+  color: #011825;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 249px;
+  height: 57px;
+  padding: 9px 17px;
+  gap: 10px;
+  border-radius: 48px;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 1550px) {
+  .career-hero-container button {
+    font-size: 24px;
+    width: 200px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 786px) {
+  .career-hero-container p {
+    line-height: 20px;
+  }
+}

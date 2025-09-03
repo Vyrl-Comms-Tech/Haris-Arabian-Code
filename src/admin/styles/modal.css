@@ -1,0 +1,10 @@
+#modalbody{
+    flex-direction: column;
+    align-items: start;
+    margin: 0px;
+    padding: 1.5rem 2rem;
+
+}
+#modal-head,#modal-footer{
+    margin: 0px;
+}

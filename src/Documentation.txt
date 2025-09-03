@@ -1,0 +1,30 @@
+harris responsive:
+
+1. people-result
+2.Mortgage Page(in progress)
+
+
+
+sqb responsive:
+
+1.home page 
+
+2.referral
+3.community-guide
+4.community-guide-area
+5.knowledge-hub
+6.career
+7.about-us
+8.contact-us
+
+
+
+sqb work merge with harris:
+
+1. referral
+2. community-guide-area
+3. community-guide
+4. Knowledge hub
+5. career
+6. about us
+7. contact us

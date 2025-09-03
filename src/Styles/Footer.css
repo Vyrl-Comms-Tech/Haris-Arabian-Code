@@ -1,0 +1,290 @@
+/* Footer.css */
+
+.footer {
+  background-color: var(--bluebg);
+  color: white;
+  width: 100%;
+}
+
+.footer-container {
+  margin: 0 auto;
+}
+
+/* Header Section */
+.footer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100% !important;
+  padding: 4rem;
+  /* padding-inline: 2rem; */
+}
+
+.logo-title {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 600; /* font-semibold */
+  line-height: 1.25; /* leading-tight */
+  letter-spacing: 0.025em; /* tracking-wide */
+  margin: 0;
+}
+
+.logo-subtitle {
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 400; /* font-normal */
+  letter-spacing: 0.05em; /* tracking-[2px] */
+}
+
+.social-section {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem; /* gap-5 */
+}
+
+.follow-text {
+  color: #fff;
+  font-size: 1.1875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1875rem; /* 100% */
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem; /* gap-4 */
+}
+
+.social-icon {
+  width: 2rem; /* w-8 */
+  height: 2rem; /* h-8 */
+  /* border: 1px solid #3a4553; */
+  border-radius: 0.25rem; /* rounded */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8892a0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #3a4553;
+  color: white;
+}
+
+.icon {
+  width: 1rem; /* w-4 */
+  height: 1rem; /* h-4 */
+}
+
+/* Main Content */
+.footer-content {
+  display: flex;
+  padding: 4rem; /* py-16 */
+}
+.footer-links-column {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap:10%;
+}
+.footer-column {
+  grid-column: span 1; /* col-span-1 */
+}
+
+.column-title {
+  margin-bottom: 10px;
+
+  color: rgba(255, 255, 255, 0.47);
+  font-size: 1.1875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.425rem; /* 120% */
+  text-transform: capitalize;
+}
+
+/* Subscribe Section */
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem; /* mb-5 */
+  margin-top: 3rem;
+  position: relative;
+}
+
+.footer-email-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #3a4553;
+  padding-bottom: 0.75rem; /* pb-3 */
+  font-size: 1rem; /* text-sm */
+  outline: none;
+  color: #fff;
+}
+
+.footer-email-input::placeholder {
+  color: #fff !important;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.send-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 0.8rem; /* text-sm */
+  cursor: pointer;
+  padding: 0.6rem 1.3rem; /* px-4 pb-3 ml-2 */
+  position: absolute;
+  border-radius: 2.75rem;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  right: 0;
+  bottom: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe-text {
+  color: #fff;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.78125rem; /* 190% */
+  white-space: nowrap;
+}
+
+.footer-contact-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 0.75rem 1.5rem; /* py-3 px-6 */
+  border-radius: 9999px; /* rounded-full */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+}
+.footer-contact-btn svg {
+  position: relative;
+  width: 13px;
+  top: 2px;
+  left: 5 px;
+}
+
+.contact-btn:hover {
+  background-color: #3a4553;
+}
+
+/* Links Lists */
+.links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem; /* space-y-3 */
+}
+.footer-links-column .links-list li a,
+.footer-column .contact-info p,
+.footer-column p {
+  color: #fff;
+  font-size: 1.05rem;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.footer-link {
+  color: #8892a0;
+  font-size: 0.875rem; /* text-sm */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: white;
+}
+
+/* Contact and Address Info */
+.contact-info,
+.address-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* space-y-2 */
+}
+
+.contact-text,
+.address-text {
+  color: #8892a0;
+  font-size: 0.875rem; /* text-sm */
+  margin: 0;
+}
+
+/* Copyright */
+.footer-copyright {
+  text-align: center;
+  padding: 2rem 0; /* py-8 */
+  border-top: 1px solid #2a3441;
+}
+
+.copyright-text {
+  color: #fff;
+  text-align: center;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.78125rem; /* 190% */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .footer-content {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .footer-container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-header {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .social-section {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-header {
+    padding: 2rem 0;
+  }
+
+  .footer-content {
+    padding: 2rem 0;
+  }
+
+  .footer-container {
+    padding: 0 1rem;
+  }
+}

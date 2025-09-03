@@ -1,0 +1,354 @@
+.TrustedPartner {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bodybg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1200px; /* Increased perspective for deeper 3D effect */
+  perspective-origin: center center;
+  transform-style: preserve-3d; /* Enable 3D transforms */
+  /* overflow: hidden; Prevent boxes from going outside bounds */
+  /* border: 5px solid green; */
+  position: relative;
+  perspective: 1800px;
+  perspective-origin: center center;
+}
+
+.boxes-container {
+  /* border: 5px solid red; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.tp-section1 {
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid black; */
+  position: relative;
+  transform-style: preserve-3d; /* Enable 3D transforms for children */
+}
+
+.tp-section1 h1 {
+  color: #011825;
+  font-size: clamp(1.25rem,3vw,3.375rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  top: 100px;
+  white-space: nowrap;
+  left: 43%;
+  top: 25%;
+}
+
+#colored-text {
+  color: #7b7b7b;
+}
+
+.tp-section2 {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid black; */
+  transform-style: preserve-3d; /* Enable 3D transforms for children */
+}
+
+/* Enhanced box styles with 3D support */
+.box {
+  transform-style: preserve-3d;
+  transform-origin: center center;
+  transition: transform 0.1s ease-out;
+  will-change: transform; /* Optimize for animations */
+  backface-visibility: visible;
+  /* opacity: 0; */
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-style: preserve-3d;
+  backface-visibility: visible;
+}
+
+/* Enhanced positioning for better 3D depth effect */
+#tpbox1 {
+  height: 200px;
+  aspect-ratio: 9/16;
+  position: absolute;
+  top: 10%;
+  left: 70%;
+  z-index: 10;
+}
+
+#tpbox2 {
+  width: 260px;
+  aspect-ratio: 16/9;
+  position: absolute;
+  top: 40%;
+  left: 65%;
+  z-index: 8;
+}
+
+#tpbox3 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 20%;
+  left: 70%;
+  z-index: 12;
+}
+
+#tpbox4 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  z-index: 6;
+}
+
+#tpbox5 {
+  width: 260px;
+  aspect-ratio: 16/9;
+  position: absolute;
+  top: 25%;
+  right: 70%;
+  z-index: 9;
+}
+
+#tpbox6 {
+  /* width: 150px; */
+  height: 150px;
+  aspect-ratio: 9/16;
+  position: absolute;
+  top: 25%;
+  right: 100%;
+  z-index: 11;
+}
+
+#tpbox7 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 60%;
+  right: 100%;
+  z-index: 7;
+}
+
+/* #tpbox8 {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  top: 55%;
+  right: 40%;
+  z-index: 5;
+} */
+
+#tpbox8 {
+  /* width: 350px; */
+  height: 250px;
+  position: absolute;
+  aspect-ratio: 9/16;
+  top: 25%;
+  right: 70%;
+  z-index: 5;
+}
+.tp-detailsbox {
+  position: absolute;
+  top: 45%;
+  left: -5%;
+}
+
+.tp-detailsbox h6 {
+  color: #000;
+  font-size: clamp(1.1rem,1.3vw,1.5625rem);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.875rem; /* 120% */
+}
+
+.buttonsrow {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+  margin-top: 20px;
+}
+#partner-sale-btn {
+  gap: 20px;
+}
+#partner-sale-btn svg {
+  position: relative;
+  top: 1px;
+}
+#partner-contact-btn svg {
+  position: relative;
+  top: 1px;
+}
+
+/* Enhanced 3D effects on hover */
+.box:hover {
+  /* transform: translateZ(20px) rotateY(5deg); */
+  /* box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); */
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .TrustedPartner {
+    flex-direction: column;
+    perspective: 800px;
+  }
+
+  .tp-section1,
+  .tp-section2 {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .tp-section1 h1 {
+    font-size: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    white-space: normal;
+  }
+
+  #tpbox1 {
+    width: 150px;
+    height: 150px;
+    left: 35%;
+  }
+
+  #tpbox2 {
+    width: 180px;
+    height: 180px;
+    left: 55%;
+  }
+
+  #tpbox3 {
+    width: 120px;
+    height: 120px;
+    left: 40%;
+  }
+
+  #tpbox4 {
+    width: 200px;
+    height: 200px;
+    left: 10%;
+  }
+
+  .tp-detailsbox {
+    left: 5%;
+    top: 40%;
+  }
+
+  .tp-detailsbox h6 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .TrustedPartner {
+    perspective: 600px;
+  }
+
+  .tp-section1 h1 {
+    font-size: 2rem;
+    top: 20%;
+  }
+
+  #tpbox1 {
+    width: 120px;
+    height: 120px;
+  }
+
+  #tpbox2 {
+    width: 150px;
+    height: 150px;
+  }
+
+  #tpbox3 {
+    width: 100px;
+    height: 100px;
+  }
+
+  #tpbox4 {
+    width: 160px;
+    height: 160px;
+  }
+
+  .tp-detailsbox h6 {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+
+  .buttonsrow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sale-button,
+  .rent-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .TrustedPartner {
+    perspective: 400px;
+  }
+
+  .tp-section1 h1 {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  #tpbox1 {
+    width: 100px;
+    height: 100px;
+  }
+
+  #tpbox2 {
+    width: 120px;
+    height: 120px;
+  }
+
+  #tpbox3 {
+    width: 80px;
+    height: 80px;
+  }
+
+  #tpbox4 {
+    width: 130px;
+    height: 130px;
+  }
+
+  .tp-detailsbox h6 {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+}
+
+.TrustedPartner {
+  perspective: 1800px;
+  perspective-origin: center center;
+  transform-style: preserve-3d;
+  position: relative;
+  overflow: hidden;
+}
+
+.box {
+  transform-style: preserve-3d;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}

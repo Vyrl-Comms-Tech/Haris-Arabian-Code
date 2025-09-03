@@ -1,0 +1,202 @@
+.about-client-reviews {
+  width: 100%;
+  height: min-content;
+  padding-top: 150px;
+  margin-bottom: 160px;
+}
+
+.about-client-reviews h1 {
+  text-align: center;
+  color: #011825;
+  font-size: 53px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 54px; /* 101.887% */
+}
+
+.about-client-reviews-container {
+  padding-top: 60px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*!
+!*/
+.about-client-reviews-content {
+  width: 830px;
+  min-height: 375px;
+  background-color: #011825;
+  padding: 35px 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.about-client-reviews-content p {
+  color: #fff;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+/*! about-client-reviews-content-bottom-left !*/
+
+.about-client-reviews-content-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-client-reviews-content-bottom-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-client-reviews-content-bottom-left img {
+  border-radius: 50%;
+}
+
+.about-client-reviews-content-bottom-left
+  .about-client-reviews-content-bottom-left-text
+  h3 {
+  color: #fff;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.about-client-reviews-content-bottom-left
+  .about-client-reviews-content-bottom-left-text
+  span {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+/* Swiper Styles */
+.reviews-swiper {
+  width: 100%;
+  /* max-width: 1700px; */
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.swiper-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  margin-top: 40px;
+}
+
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+  width: 70px;
+  height: 45px;
+  background-color: #011825;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.swiper-button-prev-custom:hover,
+.swiper-button-next-custom:hover {
+  background-color: #0a2530;
+  transform: scale(1.1);
+}
+
+.swiper-button-prev-custom.swiper-button-disabled,
+.swiper-button-next-custom.swiper-button-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Custom Pagination */
+.swiper-pagination-custom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.swiper-pagination-custom .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-custom .swiper-pagination-bullet-active {
+  background-color: #011825;
+  transform: scale(1.2);
+}
+
+/* Stars alignment */
+.about-client-reviews-content-bottom-right {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-client-reviews-content {
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    min-height: 300px;
+    padding: 25px 30px;
+  }
+
+  .about-client-reviews-content p {
+    font-size: 20px;
+  }
+
+  .about-client-reviews h1 {
+    font-size: 36px;
+  }
+
+  .about-client-reviews-content-bottom-left img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .about-client-reviews-content-bottom-left
+    .about-client-reviews-content-bottom-left-text
+    h3 {
+    font-size: 20px;
+  }
+
+  .about-client-reviews-content-bottom-left
+    .about-client-reviews-content-bottom-left-text
+    span {
+    font-size: 16px;
+  }
+}
+
+/* Large screen adjustments for 2 slides */
+@media (min-width: 1024px) {
+  .about-client-reviews-content {
+    width: 100%; /* Let swiper handle the width */
+    max-width: 830px; /* Keep the same max width per slide */
+  }
+
+  .reviews-swiper {
+    /* padding: 0 20px; Add some padding for better spacing */
+  }
+}

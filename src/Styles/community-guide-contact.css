@@ -1,0 +1,135 @@
+.community-guide-contact {
+  width: 100%;
+  height: 750px;
+  /* border: 2px solid red; */
+  margin-block: 90px;
+  padding-inline: clamp(10px, 3vw, 50px);
+  display: flex;
+  gap: 50px;
+}
+
+/*! community-guide-contact-left !*/
+.community-guide-contact-left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: 2px solid blue; */
+}
+.community-guide-contact-left h1 {
+  color: #011825;
+  /* font-size: 81px; */
+  font-size: clamp(60px,4.2vw,81px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.community-guide-contact-left p {
+  color: #011825;
+  /* font-size: 27px; */
+  font-size: clamp(24px,1.4vw,27px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 111.111%;
+  padding-bottom: 50px;
+}
+/*! community-guide-contact-right !*/
+.community-guide-contact-right {
+  width: 50%;
+  height: 100%;
+  padding: 55px 60px;
+  background-color: #011825;
+  color: white;
+  /* border: 2px solid green; */
+}
+
+.community-guide-contact-right h1 {
+  color: #fff;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+
+.community-guide-contact-right p {
+  color: #fff;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px; /* 136.364% */
+  margin-bottom: 65px;
+  max-width: 700px;
+}
+
+.community-guide-contact-right-input {
+  width: 100%;
+  display: flex;
+  gap: 45px;
+  /* border: 1px solid green; */
+  margin-bottom: 80px;
+}
+.community-guide-contact-right-input input,
+.community-guide-contact-right input {
+  width: 100%;
+  padding: 15px 0 !important;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #b3b3b3;
+  color: white;
+  font-size: 1.75rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.community-guide-contact-right-input input::placeholder,
+.community-guide-contact-right input::placeholder {
+  color: rgba(237, 237, 237, 0.71);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.community-guide-contact-right button {
+  color: #fff;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  display: flex;
+  width: 185px;
+  height: 55px;
+  padding: 12px 19px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 44px;
+  border: 0.5px solid #fff;
+  background-color: transparent;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+@media (max-width: 1550px) {
+  .community-guide-contact {
+    height: 650px;
+  }
+  .community-guide-contact-right h1 {
+    margin-bottom: 15px;
+  }
+  .community-guide-contact-right p {
+    margin-bottom: 35px;
+  }
+  .community-guide-contact-right-input {
+    margin-bottom: 45px;
+  }
+  .community-guide-contact-right button {
+    width: 165px;
+    height: 50px;
+  }
+}

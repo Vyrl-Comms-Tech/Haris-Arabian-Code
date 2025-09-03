@@ -1,0 +1,407 @@
+/* PropertySlider.css */
+
+.property-slider-container {
+  width: 100%;
+  /* min-height: 85vh; */
+  background-color: #f8f9fa;
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  /* overflow: hidden !important; */
+  border-bottom: 1px solid #cecece !important;
+}
+/* Similar property slider */
+#similar-property-slider {
+  height: min-content !important;
+  background-color: transparent !important;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+.header-left {
+  flex: 1;
+}
+
+
+.property-label {
+  color: #868686;
+  font-family: "Anek Latin";
+  font-size: clamp(1rem, 1.2vw, 1.125rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+#property-card-details {
+  color: rgba(1, 24, 37, 0.74);
+  font-family: "Anek Latin";
+  font-size: 1.25rem;
+  margin-top: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.main-title {
+  color: #011825;
+  font-family: "Anek Latin";
+  font-size: clamp(1.5rem, 2.5vw, 3.375rem);
+  font-style: normal;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: normal !important;
+  position: relative;
+  left: -2px;
+}
+
+.property-count {
+  color: #666;
+  font-family: "Anek Latin";
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.header-right {
+  height: 160px;
+  display: flex;
+  align-items: end !important;
+  gap: 12px;
+}
+
+.sale-button,
+.rent-button {
+  border-radius: 3.75rem;
+  background: #011825;
+  border: none;
+  padding: 12px 22px;
+  cursor: pointer;
+  font-weight: 300 !important;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s ease;
+  color: #fff;
+  text-align: center;
+  font-family: "Anek Latin";
+  font-size: clamp(1rem, 1.1vw, 1.1125rem);
+}
+
+.sale-button:hover,
+.rent-button:hover {
+  background-color: #333;
+}
+
+.sale-button.active,
+.rent-button.active {
+  background-color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slider-container {
+  flex: 1;
+  cursor: grab;
+  position: relative;
+  left: -30px;
+  width: 100vw !important;
+  /* min-height: 50vh !important; */
+  user-select: none;
+}
+
+.property-slider-container .slider-container .custom-swiper {
+  height: 100%;
+  padding-bottom: 60px;
+}
+
+.property-slider-container .slider-container .property-card {
+  border-radius: 12px;
+  /* overflow: hidden; */
+  width: 27.9375rem;
+  /* height: 28.33688rem; */
+  border-radius: 0.1875rem;
+  border: 1px solid #e9e9e9;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.property-slider-container
+  .slider-container
+  .property-card
+  .property-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.103);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.property-slider-container .slider-container .property-card .image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.property-slider-container .slider-container .property-card .property-image {
+  width: 26.5625rem;
+  height: 18.53125rem;
+  border-radius: 5px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.property-slider-container .slider-container .property-card .tag {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background-color: #011825;
+  border-radius: 0.25rem 1.25rem 0.1875rem 1.25rem;
+  padding: 2px 18px;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+  z-index: 1;
+  color: #fff;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.0625rem;
+  text-transform: uppercase;
+}
+
+.property-slider-container .slider-container .property-card .card-content2 {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.property-slider-container .slider-container .property-card .cardrow1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.property-slider-container .slider-container .property-card .property-title {
+  color: #1a1a1a;
+  font-family: "Anek Latin";
+  font-size: 1.1875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.425rem;
+}
+
+.property-slider-container
+  .slider-container
+  .property-card
+  .location-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.property-slider-container .slider-container .property-card .location-icon {
+  flex-shrink: 0;
+}
+
+.property-slider-container .slider-container .property-card .location {
+  color: #1a1a1a;
+  font-family: "Anek Latin";
+  font-size: 1.05rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.9rem;
+}
+
+.property-slider-container .slider-container .property-card .price-container {
+  margin-bottom: 8px;
+}
+
+.property-slider-container .slider-container .property-card .price {
+  color: #011825;
+  font-family: "Anek Latin";
+  font-size: 1.3125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.96875rem;
+}
+
+.property-slider-container .slider-container .property-card .price-type {
+  font-size: 14px;
+  color: #666;
+  font-weight: 400;
+}
+
+.property-slider-container .slider-container .property-card .specs {
+  display: flex;
+  gap: 16px;
+  margin-top: auto;
+}
+
+.property-slider-container .slider-container .property-card .spec {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border-right: 1px solid #e9e9e9;
+  padding: 2px 15px 0px 0px !important;
+}
+
+.property-slider-container .slider-container .property-card .spec-icon {
+  flex-shrink: 0;
+}
+
+.property-slider-container .slider-container .property-card .spec-text {
+  color: #1a1a1a;
+  font-family: "Anek Latin";
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.1rem;
+  margin-left: 3px;
+  position: relative;
+  top: 2px;
+}
+
+/* Fixed Swiper Pagination Styles - Consistent Size */
+.property-slider-container .slider-container .swiper-pagination {
+  bottom: 0px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 12px !important;
+  position: relative;
+  z-index: 3;
+  cursor: pointer !important;
+  top: 20px !important;
+  height: 20px !important; /* Fixed height to prevent layout shift */
+}
+
+.property-slider-container .slider-container .swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  background: rgba(0, 0, 0, 0.2) !important;
+  border-radius: 50% !important;
+  opacity: 1 !important;
+  margin: 0 !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+  /* Prevent size changes that cause glitches */
+  flex-shrink: 0 !important;
+}
+
+.property-slider-container .slider-container .swiper-pagination-bullet-active {
+  background: #011825 !important;
+  /* Keep the same size as inactive bullets */
+  width: 14px !important;
+  height: 14px !important;
+  /* Use border instead of changing size */
+  border: 4px solid #fff !important;
+  box-shadow: 0 0 0 1px #011825 !important;
+  /* Remove conflicting styles */
+  position: relative !important;
+}
+
+/* Clean up - remove duplicate/conflicting styles */
+.property-slider-container
+  .slider-container
+  .swiper-pagination-bullet-active::before,
+.property-slider-container
+  .slider-container
+  .swiper-pagination-bullet-active::after {
+  display: none !important;
+}
+
+.property-slider-container .slider-container .swiper-slide {
+  margin-right: 30px !important;
+  flex-shrink: 1;
+}
+
+/* Remove unused styles */
+.property-slider-container .slider-container .custom-bullet,
+.property-slider-container .slider-container .custom-bullet-active {
+  display: none !important;
+}
+
+/* Loading and Error States */
+.no-properties {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  color: #666;
+  font-family: "Anek Latin";
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1550px) {
+  .sale-button {
+    gap: 6px !important;
+  }
+}
+@media (max-width: 1200px) {
+  .property-slider-container {
+    padding: 30px;
+  }
+
+  .main-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .property-slider-container {
+    padding: 20px;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .main-title {
+    font-size: 32px;
+  }
+
+  .header-right {
+    justify-content: flex-start;
+  }
+
+  .slider-container {
+    left: -20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .property-slider-container {
+    padding: 16px;
+  }
+
+  .main-title {
+    font-size: 28px;
+  }
+
+  .sale-button,
+  .rent-button {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+
+  .slider-container {
+    left: -16px;
+  }
+}

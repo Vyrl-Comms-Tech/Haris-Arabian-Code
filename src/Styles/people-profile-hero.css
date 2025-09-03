@@ -1,0 +1,177 @@
+.people-profile-hero {
+  width: 100%;
+  height: min-content;
+  /* border: 1px solid red; */
+
+  display: flex;
+  padding-top: 150px;
+  padding-inline: 50px;
+  padding-bottom: 150px;
+  position: relative;
+}
+
+.people-profile-hero::before {
+  position: absolute;
+  content: "";
+  background: url("/Assets/people-card.png") no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  scale: 1.1;
+  filter: blur(15px);
+}
+/*! left !*/
+.people-profile-hero .people-profile-hero-left {
+  border: 2px solid blue;
+  width: 50%;
+}
+.people-profile-hero
+  .people-profile-hero-left
+  .people-profile-hero-left-heading {
+  border: 2px solid pink;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.people-profile-hero .people-profile-hero-left h1 {
+  font-size: 88px;
+  font-style: normal;
+  color: #fff;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.people-profile-hero .people-profile-hero-left h4 {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.people-profile-hero .people-profile-hero-left h3 {
+  color: #fff;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.people-profile-hero .people-profile-hero-left h3 span {
+  color: #fff;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: capitalize;
+}
+/*! people-profile-hero-left-active !*/
+.people-profile-hero-left-active {
+  /* border: 2px solid red; */
+  width: 360px;
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+.people-profile-hero-left-active-div h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  /* line-height: normal; */
+  margin-bottom: 10px;
+}
+.people-profile-hero-left-active-div p {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+/*! people-profile-hero-left-button !*/
+.people-profile-hero-left-button {
+  display: flex;
+  gap: 10px;
+  margin-top: 45px;
+}
+.people-profile-hero-left-button button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px;
+  background-color: transparent;
+  border-radius: 102px;
+  border: 1px solid #fff;
+  color: white;
+  gap: 20px;
+  color: #fff;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+/*! people-profile-hero-left-social !*/
+.people-profile-hero-left-social h3 {
+  /* border: 2px solid red; */
+  margin-top: 45px;
+  color: #fff;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.people-profile-hero-left-social-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.people-profile-hero-left-social-link {
+  padding: 20px;
+  border: 1px solid white;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.people-profile-hero-left-para {
+  color: #fff;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-top: 45px;
+}
+/* todo */
+/*! right !*/
+/* todo */
+.people-profile-hero .people-profile-hero-right {
+  width: 50%;
+  border: 2px solid green;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.people-profile-hero .people-profile-hero-right img {
+  width: 675px;
+  height: 803px;
+  object-fit: cover;
+  flex-shrink: 0;
+}

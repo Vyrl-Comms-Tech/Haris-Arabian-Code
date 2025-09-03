@@ -1,0 +1,53 @@
+.about-hero {
+  width: 100%;
+  height: 100vh;
+  /* border: 6px solid red; */
+  background: url("/Assets/Rectangle1.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.about-hero-container {
+  position: relative;
+  top: -20px;
+}
+.about-hero-container h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 91px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+
+.about-hero-container p {
+  color: #fff;
+  text-align: center;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  max-width: 930px;
+  margin-bottom: 50px;
+}
+
+.about-hero-container .about-hero-container-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.about-hero-container .about-hero-container-button button {
+  color: #011825;
+  font-size: 21px;
+  font-weight: 400;
+  border-radius: 60px;
+  background: #fefefe;
+  width: 170px;
+  padding: 9px 22px;
+  gap: 10px;
+  border: none;
+}

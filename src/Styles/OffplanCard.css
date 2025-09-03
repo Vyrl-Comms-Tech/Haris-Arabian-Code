@@ -1,0 +1,235 @@
+.offplan-properties-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.offplan-container{
+    width: 100vw;
+}
+.newoffplan-container {
+  width: 100%;
+  height: min-content;
+  padding: 0px 70px;
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 65px; */
+}
+.offplan-property-card {
+  /* width: 100%; */
+  width: 500px;
+  /* border: 2px solid black; */
+  height: min-content;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  /* overflow: hidden; */
+}
+
+.offplan-property-image {
+  width: 100%;
+  height: 300px;
+  padding: 6px;
+  /* overflow: hidden; */
+}
+
+.offplan-property-image img {
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.offplan-property-content {
+  padding: 20px;
+}
+
+.offplan-property-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 5px 0;
+  line-height: 1.3;
+}
+
+.offplan-property-address {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-bottom: 4px;
+  color: #666;
+  font-size: 14px;
+  border-bottom: 0.5px solid rgba(1, 24, 37, 0.24);
+
+  padding-bottom: 8px;
+}
+.offplan-property-address span {
+  position: relative;
+  top: 3px;
+  left: 2px;
+  color: #011825;
+  font-family: "Anek Latin";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.9rem; /* 190% */
+}
+
+.offplan-location-icon {
+  width: 16px;
+  height: 16px;
+  color: #666;
+}
+
+.offplan-property-details {
+  margin-bottom: 24px;
+  /* border-bottom: 0.5px solid rgba(1, 24, 37, 0.24); */
+
+  /* padding-bottom: 8px; */
+}
+
+.offplan-detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* margin-bottom: 12px; */
+  font-size: 14px;
+  border-bottom: 0.5px solid rgba(1, 24, 37, 0.24);
+
+  padding-block: 5px;
+}
+
+.offplan-detail-row:last-child {
+  margin-bottom: 0;
+}
+
+.offplan-detail-label {
+  color: #666;
+  font-weight: 400;
+  min-width: 120px;
+  color: #011825;
+  font-family: "Anek Latin";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.9rem; /* 190% */
+}
+
+.offplan-detail-value {
+  color: #1a1a1a;
+  font-weight: 500;
+  text-align: right;
+  flex: 1;
+  position: relative;
+  top: 3px;
+}
+
+.offplan-property-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.offplan-call-agent-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 24px;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.offplan-call-agent-btn:hover {
+  background: #333;
+}
+
+.offplan-btn-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.offplan-action-icons {
+  display: flex;
+  gap: 8px;
+}
+
+.offplan-action-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.offplan-whatsapp-btn {
+  background: #25d366;
+  color: white;
+}
+
+.offplan-whatsapp-btn:hover {
+  background: #20b858;
+}
+
+.offplan-email-btn {
+  background: #1a1a1a;
+  color: white;
+}
+
+.offplan-email-btn:hover {
+  background: #333;
+}
+
+.offplan-share-btn {
+  background: #1a1a1a;
+  color: white;
+}
+
+.offplan-share-btn:hover {
+  background: #333;
+}
+
+.offplan-action-icon {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 480px) {
+  .offplan-property-card {
+    max-width: 100%;
+    margin: 0 16px;
+  }
+
+  .offplan-property-content {
+    padding: 16px;
+  }
+
+  .offplan-property-title {
+    font-size: 18px;
+  }
+
+  .offplan-property-actions {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .offplan-call-agent-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .offplan-action-icons {
+    justify-content: center;
+  }
+}

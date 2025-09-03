@@ -1,0 +1,121 @@
+.knowledge-hub-hero {
+  width: 100%;
+  height: 100vh;
+  /* border: 6px solid red; */
+  background: url("/Assets/Rectangle1.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: clamp(10px, 3vw, 50px);
+}
+
+.knowledge-hub-hero-container {
+  /* border: 2px solid red; */
+}
+.knowledge-hub-hero-container h1 {
+  color: #fff;
+  text-align: center;
+  font-size: clamp(40px, 5.8vw, 91px);
+  /* font-size: 91px; */
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+
+.knowledge-hub-hero-container p {
+  color: #fff;
+  text-align: center;
+  font-size: clamp(22px, 1.5vw, 29px);
+  /* font-size: 29px; */
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  max-width: 1350px;
+  margin-bottom: 40px;
+}
+
+.knowledge-hub-hero-container-input {
+  /* border: 2px solid blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  margin-bottom: 40px;
+}
+.knowledge-hub-hero-container-input input {
+  width: 576px;
+  height: 57px;
+  padding: 7px 1px;
+  gap: 10px;
+  flex-shrink: 0;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: transparent;
+  border-bottom: 0.5px solid #ffe6e6;
+  /* backdrop-filter: blur(13.449999809265137px); */
+  font-size: 29px;
+}
+
+.knowledge-hub-hero-container-input input::placeholder {
+  color: rgba(255, 255, 255, 0.77);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.knowledge-hub-hero-container-input .knowledge-hub-hero-container-input-search {
+  width: 33px;
+  height: 33px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/*! button !*/
+
+.knowledge-hub-hero-container-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.knowledge-hub-hero-container-button button {
+  color: #fff;
+  text-align: center;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 60px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(7.449999809265137px);
+  display: flex;
+  width: 150px;
+  padding: 9px 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.knowledge-hub-hero-container-button button:nth-child(1) {
+  background-color: #011825;
+  border: 1px solid #011825;
+}
+
+@media (max-width: 768px) {
+  /* .knowledge-hub-hero-container-button {
+    flex-direction: column;
+  } */
+  .knowledge-hub-hero-container p {
+    max-width: 100%;
+  }
+}

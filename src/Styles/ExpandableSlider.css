@@ -1,0 +1,149 @@
+.ExpandableSlider {
+  width: 100%;
+  background-color: var(--bodybg);
+  padding-bottom: 70px;
+}
+.main-slider {
+  width: 1400px;
+  height: min-content;
+  /* border: 1px solid black; */
+}
+.main-slider-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#padded-header {
+  padding: 50px;
+  border-bottom: 1px solid var(--bordercolor);
+}
+.header-left #deatils-text {
+  margin-top: 20px;
+  font-size: 1.25rem;
+  line-height: normal !important;
+}
+/* SLider from jeikor */
+
+.hover-image-container {
+  display: flex;
+  width: 100%;
+  /* height: 630px; */
+  height: 70vh !important;
+  /* overflow: hidden; */
+  gap: 10px;
+  position: relative;
+}
+
+.hover-image-item {
+  position: relative;
+  width: 25%;
+  /* overflow: hidden; */
+  transition: width 0.5s ease;
+  cursor: pointer;
+}
+
+.hover-image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hover-image-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid yellow; */
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); */
+  /* opacity: 0; */
+  transform: translateY(20px);
+}
+
+.hover-image-text h2 {
+  color: #fff;
+  font-size: clamp(1.5rem, 3vw, 3.625rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+
+#project-details-holder {
+  /* border: 1px solid black; */
+  position: relative;
+  bottom: 20px;
+  /* bottom: 250px !important; */
+}
+
+#project-detail-btn {
+  color: #011825;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bodybg);
+  border-radius: 25px;
+  padding: 12px 62px;
+  white-space: nowrap;
+  opacity: 1 !important;
+  position: absolute;
+  bottom: 50px !important;
+}
+#project-details-holder p {
+  color: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Add responsive styles */
+@media (max-width: 1550px) {
+  .main-slider {
+    width: 90%;
+  }
+
+  .hover-image-container {
+    height: 85vh !important;
+  }
+  #project-detail-btn{
+    padding: 9px 45px;
+  }
+  #project-details-holder p{
+    font-size: .9rem !important;
+  }
+  /* .hover-image-text h2{
+
+  } */
+}
+
+@media (max-width: 768px) {
+  .gallery-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .gallery-item {
+    width: 100%;
+    height: 250px;
+  }
+
+  .gallery-item:hover {
+    width: 100%;
+  }
+}

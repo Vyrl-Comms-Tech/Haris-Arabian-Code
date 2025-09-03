@@ -1,0 +1,110 @@
+.community-guide-expand {
+  width: 100%;
+  height: min-content;
+  padding-inline: 60px;
+  margin-top: 110px;
+  /* border: 2px solid red; */
+}
+/*! heading !*/
+.community-guide-expand-heading {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.community-guide-expand-heading span {
+  width: 12px;
+  height: 13px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.community-guide-expand-heading h1 {
+  color: #011825;
+  font-size: clamp(50px, 3.4vw, 66px);
+  /* font-size: 66px; */
+  font-style: normal;
+  font-weight: 400;
+}
+
+/*! para !*/
+
+.community-guide-expand-para {
+  display: flex;
+  margin-top: 30px;
+  gap: 60px;
+  margin-bottom: 100px;
+}
+
+.community-guide-expand-para p:nth-child(1) {
+  /* flex: 1.2; */
+}
+.community-guide-expand-para p:nth-child(2) {
+  /* flex: 1; */
+}
+.community-guide-expand-para p {
+  color: #011825;
+  font-size: clamp(24px, 1.5vw, 29px);
+  /* font-size: 29px; */
+  font-weight: 300;
+  line-height: normal;
+}
+
+/*! video !*/
+
+.community-guide-expand-video-section {
+  position: relative;
+  /* border: 5px solid green; */
+  display: flex;
+  justify-content: center;
+}
+.community-guide-expand-video-section h2 {
+  color: #fff;
+  position: absolute;
+  mix-blend-mode: difference;
+  font-size: 94px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  /* background-color: red; */
+}
+.community-guide-expand-video-section h2:nth-child(1) {
+  top: 0;
+  left: 0;
+  /* background-color: red; */
+}
+.community-guide-expand-video-section h2:nth-child(2) {
+  bottom: 0;
+  right: 0;
+  /* background-color: green !important; */
+}
+.community-guide-expand-video-section .community-guide-expand-video-image {
+  height: 800px;
+  width: 80%;
+  object-fit: cover;
+}
+.community-guide-expand-video-section
+  .community-guide-expand-video-arrow-container {
+  width: 155px;
+  height: 155px;
+  border: 1px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.community-guide-expand-video-section .community-guide-expand-video-arrow {
+}
+
+@media (max-width: 1550px) {
+  .community-guide-expand-video-section .community-guide-expand-video-image {
+    height: 660px;
+  }
+}

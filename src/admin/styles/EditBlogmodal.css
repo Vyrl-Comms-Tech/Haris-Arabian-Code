@@ -1,0 +1,65 @@
+.modal-overlay2 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(30, 30, 45, 0.13);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal-content {
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 10px 44px 0 rgba(0, 0, 0, 0.13);
+  padding: 2rem 2rem;
+  min-width: 340px;
+  max-width: 98vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.edit-blog-form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.edit-blog-form label {
+  font-weight: 500;
+  margin-bottom: 0.35rem;
+}
+.edit-blog-form input[type="text"],
+.edit-blog-form textarea {
+  border: 1px solid #e2e2ea;
+  border-radius: 6px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.edit-blog-form textarea {
+  min-height: 50px;
+  resize: vertical;
+}
+.modal-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 0.8rem;
+}
+.btn-secondary {
+  background: #f3f3f6;
+  color: #555;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1.1rem;
+  cursor: pointer;
+}
+.btn-primary {
+  background: #172b76;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1.1rem;
+  cursor: pointer;
+}

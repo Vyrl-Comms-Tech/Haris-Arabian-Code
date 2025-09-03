@@ -1,0 +1,260 @@
+/* Dashboard Sidebar CSS Variables */
+:root {
+  --dashboard-color-sidebar: #ffffff;
+  --dashboard-color-border: #e5e7eb;
+  --dashboard-color-text: #111827;
+  --dashboard-color-secondary: #f3f4f6;
+  --dashboard-color-primary: #3b82f6;
+  --dashboard-border-radius: 0.5rem;
+  --dashboard-transition: all 0.3s ease;
+}
+
+/* Dark mode variables for dashboard */
+[data-theme="dark"] {
+  --dashboard-color-sidebar: #1f2937;
+  --dashboard-color-border: #374151;
+  --dashboard-color-text: #f9fafb;
+  --dashboard-color-secondary: #374151;
+  --dashboard-color-primary: #60a5fa;
+}
+
+/* Main dashboard sidebar styles */
+.dashboard-sidebar {
+  width: 250px !important;
+  height: 100vh !important;
+  background-color: var(--dashboard-color-sidebar) !important;
+  border-right: 1px solid var(--dashboard-color-border) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  transition: var(--dashboard-transition) !important;
+  position: relative !important;
+}
+
+/* Dashboard sidebar collapsed state */
+.dashboard-sidebar.dashboard-sidebar--collapsed {
+  width: 70px !important;
+}
+
+/* Dashboard sidebar header */
+.dashboard-sidebar .dashboard-sidebar__header {
+  height: 64px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 1rem !important;
+  border-bottom: 1px solid var(--dashboard-color-border) !important;
+  flex-shrink: 0 !important;
+}
+
+/* Dashboard sidebar logo styles */
+.dashboard-sidebar .dashboard-sidebar__logo {
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  color: var(--dashboard-color-text) !important;
+  margin: 0 !important;
+  white-space: nowrap !important;
+  opacity: 1 !important;
+  transition: var(--dashboard-transition) !important;
+}
+
+.dashboard-sidebar .dashboard-sidebar__logo--small {
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  color: var(--dashboard-color-text) !important;
+  margin: 0 !important;
+  white-space: nowrap !important;
+}
+
+/* Hide full logo when collapsed */
+.dashboard-sidebar.dashboard-sidebar--collapsed .dashboard-sidebar__logo {
+  opacity: 0 !important;
+  width: 0 !important;
+}
+
+/* Dashboard sidebar content */
+.dashboard-sidebar .dashboard-sidebar__content {
+  flex: 1 !important;
+}
+
+/* Dashboard sidebar navigation */
+.dashboard-sidebar .dashboard-sidebar__nav {
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 1rem 0 !important;
+}
+
+/* Dashboard sidebar navigation items */
+.dashboard-sidebar .dashboard-sidebar__nav-item {
+  display: flex !important;
+  align-items: center !important;
+  padding: 0.75rem 1rem !important;
+  margin: 0.25rem 0.5rem !important;
+  border-radius: var(--dashboard-border-radius) !important;
+  color: var(--dashboard-color-text) !important;
+  text-decoration: none !important;
+  transition: var(--dashboard-transition) !important;
+  position: relative !important;
+  min-height: 44px !important;
+}
+
+.dashboard-sidebar .dashboard-sidebar__nav-item:hover {
+  background-color: var(--dashboard-color-secondary) !important;
+  transform: translateX(2px) !important;
+}
+
+.dashboard-sidebar .dashboard-sidebar__nav-item:focus {
+  outline: 2px solid var(--dashboard-color-primary) !important;
+  outline-offset: -2px !important;
+}
+
+.dashboard-sidebar .dashboard-sidebar__nav-item--active {
+  background-color: rgba(59, 130, 246, 0.1) !important;
+  color: var(--dashboard-color-primary) !important;
+  border-left: 3px solid var(--dashboard-color-primary) !important;
+}
+
+/* Dashboard sidebar navigation icons */
+.dashboard-sidebar .dashboard-sidebar__nav-icon {
+  width: 1.25rem !important;
+  height: 1.25rem !important;
+  flex-shrink: 0 !important;
+  transition: var(--dashboard-transition) !important;
+}
+
+/* Dashboard sidebar navigation text */
+.dashboard-sidebar .dashboard-sidebar__nav-text {
+  margin-left: 0.75rem !important;
+  white-space: nowrap !important;
+  opacity: 1 !important;
+  transition: var(--dashboard-transition) !important;
+}
+
+/* Hide text when collapsed */
+.dashboard-sidebar.dashboard-sidebar--collapsed .dashboard-sidebar__nav-text {
+  opacity: 0 !important;
+  width: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* Collapsed navigation items */
+.dashboard-sidebar.dashboard-sidebar--collapsed .dashboard-sidebar__nav-item {
+  justify-content: center !important;
+  padding: 0.75rem !important;
+  margin: 0.25rem auto !important;
+  width: calc(100% - 1rem) !important;
+}
+
+/* Tooltip for collapsed items */
+.dashboard-sidebar.dashboard-sidebar--collapsed .dashboard-sidebar__nav-item {
+  position: relative !important;
+}
+
+.dashboard-sidebar.dashboard-sidebar--collapsed .dashboard-sidebar__nav-item::after {
+  content: attr(title) !important;
+  position: absolute !important;
+  left: 100% !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  background-color: var(--dashboard-color-text) !important;
+  color: var(--dashboard-color-sidebar) !important;
+  padding: 0.5rem 0.75rem !important;
+  border-radius: var(--dashboard-border-radius) !important;
+  font-size: 0.875rem !important;
+  white-space: nowrap !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: var(--dashboard-transition) !important;
+  z-index: 1000 !important;
+  margin-left: 0.5rem !important;
+}
+
+.dashboard-sidebar.dashboard-sidebar--collapsed .dashboard-sidebar__nav-item:hover::after {
+  opacity: 1 !important;
+}
+
+/* Custom scrollbar for dashboard sidebar */
+.dashboard-sidebar .dashboard-sidebar__content::-webkit-scrollbar {
+  width: 4px !important;
+}
+
+.dashboard-sidebar .dashboard-sidebar__content::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+.dashboard-sidebar .dashboard-sidebar__content::-webkit-scrollbar-thumb {
+  background: var(--dashboard-color-border) !important;
+  border-radius: 2px !important;
+}
+
+.dashboard-sidebar .dashboard-sidebar__content::-webkit-scrollbar-thumb:hover {
+  background: var(--dashboard-color-secondary) !important;
+}
+
+/* Mobile responsive for dashboard sidebar */
+@media (max-width: 768px) {
+  .dashboard-sidebar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 50 !important;
+    transform: translateX(-100%) !important;
+    transition: transform 0.3s ease !important;
+  }
+
+  .dashboard-sidebar.dashboard-sidebar--open {
+    transform: translateX(0) !important;
+  }
+
+  .dashboard-sidebar.dashboard-sidebar--collapsed {
+    transform: translateX(-100%) !important;
+  }
+
+  /* Mobile backdrop for dashboard sidebar */
+  .dashboard-sidebar.dashboard-sidebar--open::before {
+    content: '' !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 100% !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    z-index: -1 !important;
+  }
+}
+
+/* Tablet responsive for dashboard sidebar */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .dashboard-sidebar {
+    width: 200px !important;
+  }
+  
+  .dashboard-sidebar.dashboard-sidebar--collapsed {
+    width: 60px !important;
+  }
+}
+
+/* Animation improvements for dashboard sidebar */
+@media (prefers-reduced-motion: reduce) {
+  .dashboard-sidebar,
+  .dashboard-sidebar .dashboard-sidebar__nav-item,
+  .dashboard-sidebar .dashboard-sidebar__nav-text,
+  .dashboard-sidebar .dashboard-sidebar__logo {
+    transition: none !important;
+  }
+}
+
+/* Focus management for dashboard sidebar */
+.dashboard-sidebar:focus-within {
+  outline: none !important;
+}
+
+/* High contrast mode support for dashboard sidebar */
+@media (prefers-contrast: high) {
+  .dashboard-sidebar .dashboard-sidebar__nav-item--active {
+    border-left-width: 4px !important;
+  }
+  
+  .dashboard-sidebar .dashboard-sidebar__nav-item:hover {
+    outline: 2px solid !important;
+  }
+}

@@ -1,0 +1,318 @@
+.property-referral-container {
+  width: 100%;
+  max-width: 1050px;
+  /* box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1); */
+  overflow: hidden;
+  margin: 20px auto;
+  margin-bottom: 100px;
+}
+
+.property-referral-container .header-section {
+  text-align: center;
+  padding: 50px 40px 30px;
+}
+
+.property-referral-container .header-section h1 {
+  font-size: 5.0625rem;
+  font-weight: 700;
+  color: #011825;
+  margin-bottom: 50px;
+  line-height: 4.5625rem;
+}
+
+.property-referral-container .header-section p {
+  font-size: 1.6875rem;
+  color: #011825;
+  line-height: 1.875rem;
+  /* max-width: 600px; */
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.property-referral-container .form-container {
+  background: #1a2332;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  min-height: 500px;
+}
+
+.property-referral-container .form-wrapper {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.property-referral-container .form-wrapper.slide-left {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.property-referral-container .form-wrapper.slide-right {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.property-referral-container .form-wrapper.slide-in-right {
+  animation: slideInRight 0.3s ease-in-out;
+}
+
+.property-referral-container .form-wrapper.slide-in-left {
+  animation: slideInLeft 0.3s ease-in-out;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.property-referral-container .form-step {
+  padding: 40px;
+  color: white;
+}
+
+.property-referral-container .form-header {
+  margin-bottom: 40px;
+}
+
+.property-referral-container .form-header h2 {
+  font-size: 2.375rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.property-referral-container .form-header p {
+  color: white;
+  font-size: 1.375rem;
+  line-height: 1.6;
+  font-weight: 100;
+  max-width: 600px;
+}
+
+.property-referral-container .referral-form {
+  width: 100%;
+}
+
+.property-referral-container .form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.property-referral-container .form-group {
+  flex: 1;
+}
+
+.property-referral-container .form-group.full-width {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.property-referral-container .form-group option {
+  background-color: #1a2332 !important;
+  color: rgba(237, 237, 237, 0.71) !important;
+  border: none;
+  cursor: pointer !important;
+}
+.property-referral-container .form-select {
+  border: none !important;
+  background-color: #1a2332 !important;
+  color: rgba(237, 237, 237, 0.71) !important;
+  font-size: 1.75rem !important;
+  font-weight: 300 !important;
+  border-bottom: 1px solid #b3b3b3 !important;
+}
+.property-referral-container .form-select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.property-referral-container .form-input,
+.property-referral-container .form-select,
+.property-referral-container .form-textarea {
+  width: 100%;
+  padding: 15px 0 !important;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #b3b3b3;
+  color: white;
+  font-size: 1.75rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+.property-referral-container .form-select {
+  appearance: none; /* Remove default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("/Assets/arrow.png") !important;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px;
+  padding-right: 40px; /* Add space for custom arrow */
+}
+.property-referral-container .form-input::placeholder,
+.property-referral-container .form-textarea::placeholder {
+  /* color: #ff0000; */
+  color: rgba(237, 237, 237, 0.71);
+  font-size: 1.75rem;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.property-referral-container .form-input:focus,
+.property-referral-container .form-select:focus,
+.property-referral-container .form-textarea:focus {
+  border-bottom-color: #3498db;
+}
+
+.property-referral-container .form-select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 0 center;
+  background-repeat: no-repeat;
+  padding-right: 30px;
+}
+
+.property-referral-container .form-select option {
+  background-color: #1a2332;
+  color: white;
+  font-size: 1.3rem !important ;
+}
+
+.property-referral-container .form-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.property-referral-container .form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.property-referral-container .next-btn {
+  margin-left: auto;
+}
+.property-referral-container .next-btn,
+.property-referral-container .prev-btn,
+.property-referral-container .submit-btn {
+  border-radius: 44px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  text-align: center;
+  font-style: normal;
+  padding: 12px 30px;
+  border: none;
+  font-size: 1.3125rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+  font-weight: 500;
+}
+
+.property-referral-container .submit-btn {
+  border: 1px solid #fff;
+}
+.property-referral-container .next-btn:hover,
+.property-referral-container .prev-btn:hover,
+.property-referral-container .submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 7px rgba(255, 255, 255, 0.315);
+  background: rgba(255, 255, 255, 0.315);
+}
+
+.property-referral-container .next-btn:active,
+.property-referral-container .submit-btn:active {
+  transform: translateY(0);
+}
+
+.property-referral-container .prev-btn:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .property-referral-container .property-referral-container {
+    margin: 10px;
+    border-radius: 15px;
+  }
+
+  .property-referral-container .header-section {
+    padding: 30px 20px 20px;
+  }
+
+  .property-referral-container .header-section h1 {
+    font-size: 2rem;
+  }
+
+  .property-referral-container .header-section p {
+    font-size: 1rem;
+  }
+
+  .property-referral-container .form-step {
+    padding: 30px 20px;
+  }
+
+  .property-referral-container .form-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .property-referral-container .form-actions {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+  }
+
+  .property-referral-container .next-btn,
+  .property-referral-container .submit-btn {
+    margin-left: 0;
+  }
+
+  .property-referral-container .form-header h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .property-referral-container .header-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .property-referral-container .form-step {
+    padding: 20px 15px;
+  }
+
+  .property-referral-container .form-input,
+  .property-referral-container .form-select,
+  .property-referral-container .form-textarea {
+    padding: 12px 0;
+    font-size: 0.9rem;
+  }
+
+  .property-referral-container .next-btn,
+  .property-referral-container .prev-btn,
+  .property-referral-container .submit-btn {
+    padding: 14px 20px;
+    font-size: 0.9rem;
+  }
+}

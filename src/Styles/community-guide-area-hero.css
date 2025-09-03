@@ -1,0 +1,76 @@
+.community-guide-area-hero {
+  width: 100%;
+  height: 100vh;
+  /* border: 5px solid red; */
+  background: url("/Assets/Rectangle1.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.community-guide-area-hero-content {
+  /* border: 1px solid green; */
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.community-guide-area-hero h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 91px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+
+.community-guide-area-hero p {
+  color: #fff;
+  text-align: center;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  width: 930px;
+  margin-bottom: 30px;
+}
+
+.community-guide-area-hero-content-input {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.community-guide-area-hero-content-input input {
+  background: transparent; /* Transparent background */
+  border: none; /* Remove all borders */
+  border-bottom: 1px solid rgba(255, 230, 230, 0.5); /* Add only bottom border */
+  color: white; /* Ensure text is visible on dark bg */
+  padding: 8px 4px; /* Optional: spacing inside input */
+  outline: none;
+  width: 750px;
+  color: #fff;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.community-guide-area-hero-content-input input::placeholder {
+  color: white;
+}
+
+.community-guide-area-hero-content-input div {
+  width: 35px;
+  height: 35px;
+  border: 1px solid white;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}

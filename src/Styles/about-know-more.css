@@ -1,0 +1,238 @@
+.about-know-more {
+  width: 100%;
+  height: min-content;
+  padding: 50px 0;
+  padding-bottom: 0px;
+  margin-bottom: 150px;
+}
+
+.about-know-more-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 50px;
+  margin-bottom: 40px;
+}
+
+.about-know-more .about-know-more-heading h1 {
+  color: #011825;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.about-know-more .about-know-more-heading p {
+  color: #011825;
+  text-align: right;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  width: 600px;
+}
+
+/*! about-know-more-container !*/
+.about-know-more-container {
+  position: relative;
+  /* padding: 0 50px; */
+}
+
+/* Swiper Styles */
+.know-more-swiper {
+  width: 100%;
+  /* padding-bottom: 50px; */
+}
+
+.about-know-more-container .about-know-more-content {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.about-know-more-container .about-know-more-content img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.about-know-more-content-text {
+  padding: 10px 0;
+}
+
+.about-know-more-container .about-know-more-content p {
+  color: #011825;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.about-know-more-container .about-know-more-content button {
+  color: #011825;
+  text-align: center;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  border: 1px solid #011825;
+  background-color: transparent;
+  line-height: 45px;
+  border-radius: 60px;
+  padding-inline: 15px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.about-know-more-container .about-know-more-content button:hover {
+  background-color: #011825;
+  color: white;
+}
+
+.about-know-more-container .about-know-more-content button:hover svg path {
+  fill: white;
+}
+
+/* Navigation Styles */
+.know-more-swiper-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.know-more-swiper-button-prev,
+.know-more-swiper-button-next {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 2px solid #011825;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.know-more-swiper-button-prev:hover,
+.know-more-swiper-button-next:hover {
+  background-color: #011825;
+  transform: scale(1.1);
+}
+
+.know-more-swiper-button-prev:hover svg path,
+.know-more-swiper-button-next:hover svg path {
+  stroke: white;
+}
+
+.know-more-swiper-button-prev.swiper-button-disabled,
+.know-more-swiper-button-next.swiper-button-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Custom Pagination */
+.know-more-swiper-pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.know-more-swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.know-more-swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #011825;
+  transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-know-more-heading {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding-inline: 20px;
+  }
+
+  .about-know-more .about-know-more-heading p {
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .about-know-more .about-know-more-heading h1 {
+    font-size: 36px;
+  }
+
+  .about-know-more-container {
+    padding: 0 20px;
+  }
+
+  .about-know-more-container .about-know-more-content p {
+    font-size: 20px;
+  }
+
+  .about-know-more-container .about-know-more-content button {
+    font-size: 18px;
+    padding-inline: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-know-more {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .about-know-more-container .about-know-more-content img {
+    height: 250px;
+  }
+
+  .about-know-more-container .about-know-more-content p {
+    font-size: 18px;
+  }
+
+  .about-know-more-container .about-know-more-content button {
+    font-size: 16px;
+    padding-inline: 20px;
+  }
+}
+
+/* Large screen specific adjustments for 4 slides */
+/* @media (min-width: 1200px) {
+  .about-know-more-container .about-know-more-content {
+    max-width: 350px;
+  }
+  
+  .about-know-more-container .about-know-more-content img {
+    height: 280px;
+  }
+  
+  .about-know-more-container .about-know-more-content p {
+    font-size: 20px;
+    max-width: 320px;
+  }
+  
+  .about-know-more-container .about-know-more-content button {
+    font-size: 18px;
+  }
+} */
